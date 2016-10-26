@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_add"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.rachierudragos.buget.AdaugareValoare"
+    tools:showIn="@layout/activity_adaugare_valoare">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:orientation="vertical"
+            android:layout_toStartOf="@+id/btn_add"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/btn_add">
+
+            <EditText
+                android:id="@+id/txt_input_nume"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:hint="nume"
+                android:inputType="textCapWords"
+                android:layout_alignParentLeft="true" />
+
+            <EditText
+                android:id="@+id/txt_input_valoare"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/txt_input_nume"
+                android:hint="valoare"
+                android:inputType="number"
+                android:maxLength="9"
+                android:visibility="visible"
+                android:layout_alignParentLeft="true" />
+
+            <EditText
+                android:id="@+id/data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_input_valoare"
+                android:layout_toStartOf="@+id/btn_add"
+                android:clickable="true"
+                android:ems="10"
+                android:hint="data"
+                android:inputType="date"
+                android:maxLength="10"
+                android:visibility="gone"
+                android:layout_toLeftOf="@+id/btn_add" />
+
+            <EditText
+                android:id="@+id/txt_input_bucati"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="număr bucăţi"
+                android:inputType="number"
+                android:maxLength="9"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/linearlayout"
+            android:visibility="gone"
+            android:layout_alignParentRight="true" />
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/linearlayout"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:text="Adăugare"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+</ScrollView>

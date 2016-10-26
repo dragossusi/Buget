@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_venit"
+            android:icon="@mipmap/ic_venituri"
+            android:title="Venituri" />
+        <item
+            android:id="@+id/nav_cost"
+            android:icon="@mipmap/ic_costuri"
+            android:title="Costuri" />
+        <item
+            android:id="@+id/nav_wish"
+            android:icon="@mipmap/ic_wishlist"
+            android:title="Listă dorințe" />
+        <item
+            android:id="@+id/nav_total"
+            android:icon="@mipmap/ic_total"
+            android:title="Total" />
+        <item
+            android:id="@+id/nav_calendar"
+            android:icon="@mipmap/ic_calendar"
+            android:title="Calendar" />
+    </group>
+
+</menu>

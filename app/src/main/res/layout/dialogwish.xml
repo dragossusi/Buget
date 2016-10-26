@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/valoare_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="nume"
+        android:inputType="textCapWords"
+        android:layout_alignParentTop="true"
+        android:text="1234"
+        android:layout_toEndOf="@+id/textView2"
+        android:maxLength="9"
+        android:layout_toRightOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/bucati_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="valoare"
+        android:inputType="number"
+        android:visibility="visible"
+        android:text="123"
+        android:layout_below="@+id/valoare_edit"
+        android:maxLength="9"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Valoare:"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/valoare_edit"
+        android:gravity="center"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Bucati:"
+        android:id="@+id/textView4"
+        android:gravity="center"
+        android:layout_below="@+id/valoare_edit"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/bucati_edit"
+        android:layout_alignBottom="@+id/bucati_edit"
+        android:layout_toLeftOf="@+id/bucati_edit"
+        android:layout_alignParentLeft="true" />
+</RelativeLayout>

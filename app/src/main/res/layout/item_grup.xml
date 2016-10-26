@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bucati_item_grup"
+        android:visibility="gone"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:textSize="18dp"
+        android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"
+        android:text="Item"
+        android:id="@+id/nume_item_grup" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:paddingRight="8dp"
+        android:textSize="18dp"
+        android:text="12345"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/valoare_item_grup"
+        android:layout_alignTop="@id/nume_item_grup"
+        android:layout_alignBottom="@id/nume_item_grup"
+        android:layout_gravity="right"
+        android:layout_toRightOf="@+id/nume_item_grup"
+        android:layout_toEndOf="@+id/nume_item_grup"
+        android:gravity="right" />
+</RelativeLayout>
